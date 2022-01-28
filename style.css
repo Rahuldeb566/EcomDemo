@@ -260,3 +260,73 @@ nav {
     background-color: lightgray;
     color: black;
   }
+
+  .payment {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 9px 2px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 0px 4px 9px 2px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 4px 9px 2px rgba(0,0,0,0.7);
+  }
+
+  .payTitle {
+    font-size: 20px;
+    color: gray;
+  }
+
+  label {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .payInput {
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+
+  .payInput::placeholder {
+    color: lightgray;
+  }
+
+  .cardIcons {
+    display: flex;
+  }
+
+  .cardIcon {
+    margin-right: 10px;
+  }
+
+  .cardInfo {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sm {
+    width: 30%;
+  }
+
+  .payButton {
+    height: 40px;
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 4px 9px 2px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 0px 4px 9px 2px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 4px 9px 2px rgba(0,0,0,0.7);
+    background-color: green;
+    color: white;
+    cursor: pointer;
+  }
