@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     padding: 0;
@@ -116,6 +120,7 @@ nav {
     background-color: black;
     z-index: 1;
     cursor: pointer;
+    border-radius: 5px;
   }
 
   .buyButton:hover {
@@ -172,4 +177,86 @@ nav {
   .featureIcon {
     width: 50px;
     height: 50px;
+  }
+
+  .featureTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+  }
+
+  .featureDesc {
+    width: 50%;
+    height: 50%;
+    color: gray;
+  }
+
+  .product {
+    height: 100vh;
+    position: relative;
+    background-color: whitesmoke;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .productImg {
+    width: 50%;
+  }
+
+  .productDetails {
+    width: 40%;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    padding: 50px;
+  }
+
+  .productTitle {
+    font-size: 70px;
+    font-weight: 900;
+  }
+
+  .productDesc {
+    color: gray;
+  }
+
+  .colors, .sizes {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .color {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .color:last-child {
+    background-color: darkblue;
+  }
+
+  .size {
+    border: 1px solid black;
+    padding: 5px 20px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .productButton {
+    float: right;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+
+  .productButton:hover {
+    background-color: lightgray;
+    color: black;
   }
